@@ -10,8 +10,22 @@ public class SameFirstAndLast {
     }
 
     private static ArrayList<String> sameFirstAndLast(ArrayList<String> list) {
+        System.out.println("========== 1st option =============");
 
-        list.removeIf( i -> (""+i.charAt(0)).equalsIgnoreCase( ""+i.charAt(i.length()-1) ) );
-        return list;
+        ArrayList<String> list2 = new ArrayList<>();
+        for (String s : list) {
+                if (!(s.charAt(0) + "").equalsIgnoreCase(s.charAt(s.length()-1)+"")){
+                list2.add(s);
+            }
+        }
+        return list2;
+
+      //  System.out.println("========== 2nd option =============");
+
+//        list.removeIf( i -> (""+i.charAt(0)).equalsIgnoreCase( ""+i.charAt(i.length()-1) ) );
+//        return list;
+
+
+
     }
 }

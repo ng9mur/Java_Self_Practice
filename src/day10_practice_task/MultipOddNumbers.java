@@ -2,6 +2,7 @@ package day10_practice_task;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class MultipOddNumbers {
     public static void main(String[] args) {
@@ -9,6 +10,7 @@ public class MultipOddNumbers {
         int  odd =0;
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i) % 2 != 0){
+                Collections.replaceAll(list,list.get(i),list.get(i) *2);
             }
 
         }
