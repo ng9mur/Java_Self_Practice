@@ -1,7 +1,5 @@
 package day13_practice_task.employee;
 
-
-
 public class Employee extends Person {
     private String employeeId;
     private String jobTitle;
