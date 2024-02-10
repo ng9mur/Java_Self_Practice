@@ -8,10 +8,10 @@ public class Candy {
     private boolean hasPeanuts;
 
     public Candy(String brand, int quantity, double price, boolean hasPeanuts) {
-        this.brand = brand;
-        this.quantity = quantity;
-        this.price = price;
-        this.hasPeanuts = hasPeanuts;
+        setBrand(brand);
+        setQuantity(quantity);
+        setPrice(price);
+        setHasPeanuts(hasPeanuts);
     }
 
     public String getBrand() {
@@ -78,7 +78,7 @@ public class Candy {
         return "Candy{" +
                 "brand='" + brand + '\'' +
                 ", quantity=" + quantity +
-                ", price=" + printFree() +
+                ", price=" + printFree()+
                 ", hasPeanuts=" + hasPeanuts +
                 '}';
     }
