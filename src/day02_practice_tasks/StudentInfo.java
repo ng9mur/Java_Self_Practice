@@ -34,12 +34,12 @@ public class StudentInfo {
 
      */
     public static void main(String[] args) {
-        String studentName = "Josh Steven";
+        String studentName = "Josh Steven",
+        schoolName = "MIT",
+        gradeLevel = "Undergraduate",
+        studentId = "A125";
+        char gender = 'M';
         int age = 22;
-        String gender = "Male";
-        String schoolName = "MIT";
-        String gradeLevel = "Undergraduate";
-        String studentId = "A125";
         double gpa = 2.0;
         System.out.println("The student's name is " + studentName);
         System.out.println("Gender is "+gender);

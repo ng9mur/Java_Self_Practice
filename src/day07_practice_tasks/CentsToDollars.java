@@ -18,9 +18,10 @@ public class CentsToDollars {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the cents:");
         int cents = scan.nextInt();
-        int dollars = (int) (cents * 0.01);
-        int remCents = cents % 100;
-        System.out.println(cents + " cents is equal to " + dollars + " dollars and " + remCents + " cents");
+        int dollars = cents/100;
+        //int remCents = cents % 100;
+        cents -= dollars*100;
+        System.out.println(cents + " cents is equal to " + dollars + " dollars and " + cents + " cents");
         scan.close();
     }
 }

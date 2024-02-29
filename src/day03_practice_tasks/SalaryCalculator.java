@@ -32,19 +32,19 @@ public class SalaryCalculator {
 
      */
     public static void main(String[] args) {
-        double hourlyRate = 50;
-        int weeklyHours = 45;
-        double stateTaxRate = 6; //given as a percentage
-        double federalTaxRate = 26; //given as a percentage
-        double salaryBeforeTax = hourlyRate * weeklyHours*5 * 12;
-        double stateTax;
-        double federalTax;
-        double totalTax;
-        double salaryAfterTax;
+        double hourlyRate = 50,
+               weeklyHours = 45,
+               stateTaxRate = 6, //given as a percentage
+               federalTaxRate = 26; //given as a percentage
+        double salaryBeforeTax = hourlyRate * weeklyHours * 52;
+        double stateTax = salaryBeforeTax * stateTaxRate / 100;
+        double federalTax = salaryBeforeTax * federalTaxRate /100;
+        double totalTax = stateTax + federalTax;
+        double salaryAfterTax = salaryBeforeTax - totalTax;
         System.out.println("Gross pay is: " +salaryBeforeTax);
-        System.out.println("Federal tax is: ");
-        System.out.println("State tax is: ");
-        System.out.println("Total tax is: ");
-        System.out.println("Net income is: ");
+        System.out.println("Federal tax is: " + federalTax);
+        System.out.println("State tax is: " + stateTax);
+        System.out.println("Total tax is: " + totalTax);
+        System.out.println("Net income is: " + salaryAfterTax);
     }
 }

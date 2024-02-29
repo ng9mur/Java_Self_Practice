@@ -19,7 +19,7 @@ public class Grade2 {
 				   Great job
      */
     public static void main(String[] args) {
-        char grade = 'F';
+        char grade = 'D';
         String message = "";
         switch (grade){
             case 'A' -> message = "Excellent";

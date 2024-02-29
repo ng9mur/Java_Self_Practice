@@ -14,12 +14,12 @@ are multiples of both 3 and 5, print "FINRA" instead of the number. For numbers 
         int i = 1;
 
         do {
-            if (i % 3 == 0) {
-                System.out.print("FIN" + " ");
+            if (i % 3 == 0 && i % 5 == 0) {
+                System.out.print("FINRA" + " ");
             } else if (i % 5 == 0) {
                 System.out.print("RA" + " ");
-            } else if (i % 3 == 0 && i % 5 == 0) {
-                System.out.print("FINRA" + " ");
+            } else if (i % 3 == 0 ) {
+                System.out.print("FIN" + " ");
             } else {
                 System.out.print(i + " ");
 

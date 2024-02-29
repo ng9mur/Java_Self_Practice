@@ -28,6 +28,6 @@ public class Diamon1 {
         System.out.println(" \\     / ");
         System.out.println("  \\   /  ");
         System.out.println("   \\ /   ");
-        System.out.println("    ^     ");
+        System.out.println("    V    ");
     }
 }

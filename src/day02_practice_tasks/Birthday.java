@@ -24,6 +24,6 @@ public class Birthday {
        byte birthday = 25;
        String birthMonth = "April";
        int birthYear = 1995;
-        System.out.println(name + " was born on "+ birthMonth + " "+birthday+", "+birthYear+".");
+        System.out.println(name + " was born on "+ birthMonth + " "+birthday+","+birthYear+".");
     }
 }

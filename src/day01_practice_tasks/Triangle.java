@@ -20,11 +20,6 @@ public class Triangle {
         System.out.println("---------");
 
 
-            long a = 3_000L;
-            double b = (float) a;
-            int c = (short) b;
-            System.out.println(c % 1000);
-
 
     }
 }

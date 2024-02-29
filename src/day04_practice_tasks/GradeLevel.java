@@ -19,7 +19,7 @@ public class GradeLevel {
 				  Middle school
      */
     public static void main(String[] args) {
-        byte gradeLevel = 30;
+        byte gradeLevel = 13;
         String schoolType = "";
         if (gradeLevel >=1 && gradeLevel <=5){
             schoolType = "Elementary school";

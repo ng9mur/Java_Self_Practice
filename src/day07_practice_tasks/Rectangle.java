@@ -18,10 +18,10 @@ public class Rectangle {
     public double width;
     public double length;
 
-    public double calculateArea(double width,double length){
+    public double calculateArea(){
         return width*length;
     }
-    public double calculatePerimeter(double width , double length){
+    public double calculatePerimeter(){
         return (width+length)*2;
     }
 

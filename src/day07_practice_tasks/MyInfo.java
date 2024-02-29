@@ -42,7 +42,6 @@ public class MyInfo {
         input.nextLine();
         System.out.println("Enter your School name");
         String schoolName = input.nextLine();
-        input.nextLine();
         System.out.println("Enter your city name");
         String city = input.nextLine();
         System.out.println("Enter your state name");
@@ -52,10 +51,11 @@ public class MyInfo {
         System.out.println("Enter your Street name");
         input.nextLine();
         String street = input.nextLine();
-        System.out.println(fullName);
-        System.out.println(age);
-        System.out.println(gender);
-        System.out.println(phoneNum);
+        System.out.println("Full name: " + fullName);
+        System.out.println("Age: "+age);
+        System.out.println("Gender: "+gender);
+        System.out.println("Phone number: " +phoneNum);
+        System.out.println("School name: "+schoolName);
         System.out.println("Address:\n\t" + buildingNum + " " + street + "\n\t" + city + ", " + state + " " + zipCode);
 
         input.close();

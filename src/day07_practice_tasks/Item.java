@@ -22,9 +22,8 @@ public class Item {
     double totalCost;
 
 
-    public double calcCost(double unitPrice, int quantity) {
-        totalCost = quantity * unitPrice;
-        return totalCost;
+    public double calcCost() {
+        return quantity * unitPrice;
     }
 
 
@@ -33,7 +32,7 @@ public class Item {
                 "itemName='" + itemName + '\'' +
                 ", unitPrice=" + unitPrice +
                 ", quantity=" + quantity +
-                ", totalCost=" + totalCost +
+                ", totalCost=" + calcCost() +
                 '}';
     }
 }

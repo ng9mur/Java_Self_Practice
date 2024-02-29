@@ -18,11 +18,11 @@ public class CrewAndPassenger {
 				  25 crew, 50 passengers
      */
     public static void main(String[] args) {
-        int numOfPeople = 10;
+        int numOfPeople = 75;
         String result = "";
         if ( numOfPeople == 50 ){
             result = "20 crew, 30 passengers";
-        } else if (numOfPeople == 25) {
+        } else if (numOfPeople == 75) {
             result = "25 crew, 50 passengers";
         } else if (numOfPeople ==100) {
             result = "30 crew, 70 passengers";

@@ -24,11 +24,11 @@ public class Diamon2 {
         System.out.println(" / * * \\");
         System.out.println("/ * * * \\");
         System.out.println(" ------- ");
-        System.out.println("\\* * * / ");
-        System.out.println("\\* *  /  ");
-        System.out.println(" \\*  /   ");
-        System.out.println("  \\ /    ");
-        System.out.println("  \\/     ");
+        System.out.println("\\ * * * / ");
+        System.out.println(" \\ * * /  ");
+        System.out.println("  \\ * /   ");
+        System.out.println("   \\ /    ");
+        System.out.println("    V     ");
 
     }
 }

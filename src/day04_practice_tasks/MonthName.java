@@ -19,7 +19,7 @@ of the month, write a program that displays the month's name based on the given 
      */
 
     public static void main(String[] args) {
-        int number = 50;
+        int number = 5;
         String month = "";
         switch (number) {
             case 1 -> month = "January";

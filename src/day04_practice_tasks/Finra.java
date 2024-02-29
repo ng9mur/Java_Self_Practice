@@ -14,7 +14,7 @@ public class Finra {
 				  FINRA
      */
     public static void main(String[] args) {
-        int number = 8;
+        int number = 65;
         String word = "";
         if (number % 3 == 0 && number %5 != 0){
             word = "FIN";
