@@ -20,22 +20,21 @@ of the month, write a program that displays the month's name based on the given 
 
     public static void main(String[] args) {
         int number = 5;
-        String month = "";
-        switch (number) {
-            case 1 -> month = "January";
-            case 2 -> month = "February";
-            case 3 -> month = "March";
-            case 4 -> month = "April";
-            case 5 -> month = "May";
-            case 6 -> month = "June";
-            case 7 -> month = "July";
-            case 8 -> month = "August";
-            case 9 -> month = "September";
-            case 10 -> month = "October";
-            case 11 -> month = "November";
-            case 12 -> month = "December";
-            default -> month = "No such month";
-        }
+        String month = switch (number) {
+            case 1 -> "January";
+            case 2 -> "February";
+            case 3 -> "March";
+            case 4 -> "April";
+            case 5 -> "May";
+            case 6 -> "June";
+            case 7 -> "July";
+            case 8 -> "August";
+            case 9 -> "September";
+            case 10 -> "October";
+            case 11 -> "November";
+            case 12 -> "December";
+            default -> "No such month";
+        };
         System.out.println(month);
     }
 }

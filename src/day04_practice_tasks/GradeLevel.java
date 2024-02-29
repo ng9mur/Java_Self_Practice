@@ -19,18 +19,21 @@ public class GradeLevel {
 				  Middle school
      */
     public static void main(String[] args) {
-        byte gradeLevel = 13;
+        byte gradeLevel = 17;
         String schoolType = "";
-        if (gradeLevel >=1 && gradeLevel <=5){
-            schoolType = "Elementary school";
-        } else if (gradeLevel>=6 && gradeLevel <= 8){
-            schoolType = "Middle school";
-        }else if (gradeLevel >=9 && gradeLevel<=12){
-            schoolType = "High school";
-        }else if (gradeLevel >=13 && gradeLevel <=16){
-            schoolType = "College";
-        }else if (gradeLevel >=17 && gradeLevel <=18){
-            schoolType = "Grad School";
+        boolean validNumber = gradeLevel >= 1 && gradeLevel <= 18;
+        if (validNumber) {
+            if (gradeLevel <= 5) {
+                schoolType = "Elementary school";
+            } else if (gradeLevel <= 8) {
+                schoolType = "Middle school";
+            } else if (gradeLevel <= 12) {
+                schoolType = "High school";
+            } else if (gradeLevel <= 16) {
+                schoolType = "College";
+            } else {
+                schoolType = "Grad School";
+            }
         }else {
             schoolType = "Invalid grade level";
         }

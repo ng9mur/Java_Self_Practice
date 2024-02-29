@@ -22,15 +22,14 @@ the given math operator.
      */
     public static void main(String[] args) {
         double n1 = 10, n2 = 20;
-        double result=0;
-        char mathOperator = '=';
+        char mathOperator = '+';
         switch (mathOperator){
-            case '+' -> result = n1+n2;
-            case '-' -> result = n1-n2;
-            case '*' -> result = n1*n2;
-            case '/' -> result = n1/n2;
-            default -> System.out.println("Invalid input");
+            case '+' -> System.out.println(n1+n2);
+            case '-' -> System.out.println(n1-n2);
+            case '*' -> System.out.println(n1*n2);
+            case '/' -> System.out.println(n1/n2);
+            default -> System.out.println("Invalid Operator");
         }
-        System.out.println(result);
+
     }
 }

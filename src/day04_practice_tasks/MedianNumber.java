@@ -18,34 +18,47 @@ three DIFFERENT given integers (Assume that the given three integers are distinc
         int b = 20;
         int c = 20;
         int median = 0;
-        if (a != b && b != c && a != c) {
-            if (a > b && a > c) {
-                if (b > c) {
-                    median = b;
-                } else {
-                    median = c;
-                }
-            } else if (b > c && b > a) {
-                if (c > a) {
-                    median = c;
-                } else {
-                    median = a;
-                }
-            } else if (c > b && c > a) {
-                if (a > b) {
-                    median = a;
-                } else {
-                    median = b;
-                }
-            }
-            System.out.println(median + " is the median number");
+        boolean aIsMedian = (a > b && a < c)||(a < b && a > c);
+        boolean bIsMedian = (b > c && b < a) || (b > a && b < c);
+        if (aIsMedian) {
+            System.out.println(a + " is the median number");
+        } else if (bIsMedian) {
+            System.out.println(b + " is the median number");
         } else {
-            System.out.println("There's no median number");
-
-
+            System.out.println(c + " is the median number");
         }
 
     }
+
+//        if (a != b && b != c && a != c) {
+//            if (a > b && a > c) {
+//                if (b > c) {
+//                    median = b;
+//                } else {
+//                    median = c;
+//                }
+//            } else if (b > c && b > a) {
+//                if (c > a) {
+//                    median = c;
+//                } else {
+//                    median = a;
+//                }
+//            } else if (c > b && c > a) {
+//                if (a > b) {
+//                    median = a;
+//                } else {
+//                    median = b;
+//                }
+//            }
+//            System.out.println(median + " is the median number");
+//        } else {
+//            System.out.println("There's no median number");
+//
+//
+//        }
+//
+//    }
+
 }
 
 

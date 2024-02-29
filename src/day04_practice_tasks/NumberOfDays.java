@@ -20,24 +20,14 @@ public class NumberOfDays {
 			Months with 30 days: 4, 6, 9, 11
      */
     public static void main(String[] args) {
-        int monthNum = 8;
-        int days = 0;
+        int monthNum = 7;
         switch (monthNum) {
-            case 1 -> days = 31;
-            case 2 -> days = 28;
-            case 3 -> days = 31;
-            case 4 -> days = 30;
-            case 5 -> days = 31;
-            case 6 -> days = 30;
-            case 7 -> days = 31;
-            case 8 -> days = 31;
-            case 9 -> days = 30;
-            case 10 -> days = 31;
-            case 11 -> days = 30;
-            case 12 -> days = 31;
-            default -> System.out.println("Invalid");
+            case 1,3,5,7,8,10,12 -> System.out.println("31 days");
+            case 2 -> System.out.println("28 days");
+            case 4,6,9,11 -> System.out.println("30 days");
+            default -> System.out.println("Invalid month");
 
         }
-        System.out.println(days);
+
     }
 }

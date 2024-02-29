@@ -20,6 +20,7 @@ level (number), and you must print a message based on the level:
     public static void main(String[] args) {
         int oxygenLevel = 50;
         String message = "";
+
         if (oxygenLevel>=90){
             message = "Your tank is full";
         } else if (oxygenLevel>=80) {

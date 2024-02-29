@@ -19,14 +19,18 @@ public class AgeGroups {
 				  Young Middle-Aged Adult
      */
     public static void main(String[] args) {
-        int age = 78;
+        int age = 145;
+        boolean valid = age >= 0 && age <= 150;
         String group = "";
-        if (age>=0 && age <=20){
-            group = "Teenager";
-        } else if (age>=21 && age<=55) {
-            group = "Adult";
-        } else if (age>55 && age<=150) {
-            group = "Senior";
+        if (valid) {
+            if (age <= 20) {
+                group = "Teenager";
+            } else if (age <= 55) {
+                group = "Adult";
+            } else {
+                group = "Senior";
+            }
+
         }else {
             group = "Invalid";
         }

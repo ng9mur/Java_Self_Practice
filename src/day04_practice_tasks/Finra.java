@@ -14,15 +14,16 @@ public class Finra {
 				  FINRA
      */
     public static void main(String[] args) {
-        int number = 65;
+        int number = 7;
         String word = "";
-        if (number % 3 == 0 && number %5 != 0){
-            word = "FIN";
-        } else if (number%5 == 0 && number % 3 != 0) {
-            word = "RA";
-        }else if (number%3 == 0 && number % 5 == 0){
+        if (number%3 == 0 && number % 5 == 0){
             word = "FINRA";
+        } else if (number%5 == 0 ) {
+            word = "RA";
+        }else if (number % 3 == 0 ){
+            word = "FIN";
         }else {
+           // word = "" + number;
             System.out.println(number);
         }
         System.out.println(word);
