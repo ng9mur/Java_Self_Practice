@@ -87,6 +87,16 @@ public class MathUtility {
         return (operator == '+') ? num1 + num2 : (operator == '-') ? num1 - num2 : (operator == '*') ?
                 num1 * num2 : (operator == '/') ? num1 / num2 : 0;
     }
+//    public static int calculate(int num1, char operator, int num2) {
+//        int result = switch (operator) {
+//            case '-' -> num1 - num2;
+//            case '+' -> num1 + num2;
+//            case '*' -> num1 * num2;
+//            case '/' -> num1 / num2;
+//            default -> 0;
+//        };
+//
+//        return result;
 
     public static double calculate(double num1, char operator, double num2) {
         return (operator == '+') ? num1 + num2 : (operator == '-') ? num1 - num2 : (operator == '*') ?

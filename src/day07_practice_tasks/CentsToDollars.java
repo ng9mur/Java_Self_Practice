@@ -16,7 +16,7 @@ convert the given cents to dollars. Include any remainder in the result.
 public class CentsToDollars {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter the cents:");
+        System.out.println("Enter cents:");
         int cents = scan.nextInt();
         int dollars = cents/100;
         //int remCents = cents % 100;

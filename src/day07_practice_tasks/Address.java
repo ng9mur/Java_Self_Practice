@@ -28,10 +28,7 @@ package day07_practice_tasks;
  */
 public class Address {
     int buildingNumber;
-    String street;
-    String city;
-    String state;
-    String zipCode;
+    String street, city, state, zipCode;
 
     public String toString() {
         return buildingNumber +

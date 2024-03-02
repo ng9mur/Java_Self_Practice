@@ -41,39 +41,39 @@ public class DayAndMonth {
 
     }
 
-    public static String day(int num) {
-        String result = "";
-        switch (num) {
-            case 1 -> result = "Monday";
-            case 2 -> result = "Tuesday";
-            case 3 -> result = "Wednesday";
-            case 4 -> result = "Thursday";
-            case 5 -> result = "Friday";
-            case 6 -> result = "Saturday";
-            case 7 -> result = "Sunday";
-            default -> result = "Invalid number";
+    public static String day(int day) {
+        String res = "";
+        if (day >= 1 && day <= 7) {
+            res =
+                    (day == 1) ? "Monday" : (day == 2) ? "Tuesday" : (day == 3) ? "Wednesday"
+                            : (day == 4) ? "Thursday" : (day == 5) ? "Friday" : (day == 6) ? "Saturday" : "Sunday";
+
+
+        }else {
+            res = "Invalid Number";
         }
-        return result;
+        return res;
     }
 
+
+
     public static String monthName(int num) {
-        String result = "";
-        switch (num) {
-            case 1 -> result = "January";
-            case 2 -> result = "February";
-            case 3 -> result = "March";
-            case 4 -> result = "April";
-            case 5 -> result = "May";
-            case 6 -> result = "June";
-            case 7 -> result = "July";
-            case 8 -> result = "August";
-            case 9 -> result = "September";
-            case 10 -> result = "October";
-            case 11 -> result = "November";
-            case 12 -> result = "December";
-            default -> result = "Invalid number";
-        }
-        return result;
+        String month = switch (num) {
+            case 1 -> "January";
+            case 2 -> "February";
+            case 3 -> "March";
+            case 4 -> "April";
+            case 5 -> "May";
+            case 6 -> "June";
+            case 7 -> "July";
+            case 8 -> "August";
+            case 9 -> "September";
+            case 10 -> "October";
+            case 11 -> "November";
+            case 12 -> "December";
+            default -> "No such a month";
+        };
+        return month;
     }
 
     public static void daysInMonth(int num) {
